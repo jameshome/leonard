@@ -1,0 +1,14 @@
+routes:
+  /: home
+collections:
+  /history/:
+    permalink: /history/{slug}/
+    template: history
+    filter: primary_tag:history
+    data: tag.history
+  /lodging/:
+    permalink: /lodging/{slug}/
+    template: tag
+    filter: primary_tag:lodging
+    data: tag.lodging
+taxonomies:
